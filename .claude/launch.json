@@ -2,8 +2,9 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "lima-lab-website",
-      "url": "http://localhost:8765",
+      "name": "fernandez-lima-lab-website",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8765"],
       "port": 8765
     }
   ]

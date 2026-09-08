@@ -239,6 +239,26 @@ section.alt {
   margin-bottom: 0;
 }
 
+/* Research areas overview figure */
+.research-areas-heading {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+}
+
+.research-overview-figure {
+  margin: 0;
+  text-align: center;
+}
+
+.research-overview-figure img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: #fff;
+}
+
 /* ===== People ===== */
 .person-card {
   text-align: center;
@@ -588,6 +608,124 @@ section.alt {
   background: var(--color-primary);
   color: #fff;
   border-color: var(--color-primary);
+}
+
+.filter-count {
+  opacity: 0.7;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Category tags */
+:root {
+  --cat-structural: #3b6e8f;
+  --cat-neuroscience: #8c2f3d;
+  --cat-proteomics: #2f8f7a;
+  --cat-computational: #a98f2b;
+  --cat-outreach: #6b5b95;
+}
+
+.pub-item h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.pub-item h3 a {
+  color: var(--color-primary-dark);
+}
+
+.pub-item h3 a:hover {
+  color: var(--color-primary);
+}
+
+.pub-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--tag-color) 12%, #fff);
+  color: var(--tag-color);
+}
+
+.tag-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--tag-color);
+  flex-shrink: 0;
+}
+
+.tag-structural { --tag-color: var(--cat-structural); }
+.tag-neuroscience { --tag-color: var(--cat-neuroscience); }
+.tag-proteomics { --tag-color: var(--cat-proteomics); }
+.tag-computational { --tag-color: var(--cat-computational); }
+.tag-outreach { --tag-color: var(--cat-outreach); }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.badge-oa {
+  background: #e5f2ed;
+  color: #1f6b4f;
+}
+
+.badge-preprint {
+  background: var(--color-bg-alt);
+  color: var(--color-text-muted);
+}
+
+.badge-active {
+  background: #e5f2ed;
+  color: #1f6b4f;
+}
+
+/* Research grants */
+.grant-card h3 {
+  font-size: 1rem;
+}
+
+.grant-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.grant-number {
+  font-variant-numeric: tabular-nums;
+}
+
+.empty-state {
+  display: none;
+  padding: 40px 24px;
+  text-align: center;
+  color: var(--color-text-muted);
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.empty-state.show {
+  display: block;
 }
 
 /* ===== News ===== */
